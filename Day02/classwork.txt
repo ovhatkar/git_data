@@ -1,0 +1,216 @@
+cd dir1
+pwd
+cd ~
+pwd
+cd -
+pwd
+cd -
+pwd
+cd -
+pwd
+cd ..
+pwd
+cd ../..
+pwd
+cp -r march23/ditiss sept2023
+cd sept2023/ditiss/
+ls
+ls -l
+ls -l /dev/
+ls -l
+ls -a
+ls -A
+touch .hidden.txt
+ls
+ls -a
+ls -A
+man ls
+ls -s
+ls -S
+ls -l f1.txt 
+touch f1.txt 
+ls -l f1.txt 
+stat f1.txt 
+stat -c "%n, %s" f1.txt 
+stat -c "name = %n, size = %s" f1.txt 
+stat f1.txt 
+stat -c "name = %n" f1.txt 
+stat "name = %n" f1.txt 
+stat f1.txt f2.txt 
+ls
+cat > lines.txt
+vim lines.txt 
+cat lines.txt 
+cat -n lines.txt 
+head lines.txt 
+tail lines.txt 
+head -5 lines.txt 
+tail -4 lines.txt 
+head -13 lines.txt 
+head -20 lines.txt 
+head -n +10 lines.txt 
+head -n +8 lines.txt 
+head -n -8 lines.txt 
+man head
+head -n +8 lines.txt 
+head -n -8 lines.txt 
+tail -n +8 lines.txt 
+tail -n -8 lines.txt 
+man tail
+cat > numbers.txt
+cat numbers.txt 
+sort numbers.txt 
+sort -n numbers.txt 
+cat numbers.txt 
+uniq numbers.txt 
+sort numbers.txt 
+cat numbers.txt 
+ls
+vim file.txt
+cat > file.txt
+cat file.txt 
+wc file.txt 
+wc -l file.txt 
+wc -w file.txt 
+wc -c file.txt 
+wc < file.txt
+ls -l
+ls -l > output.txt
+ls
+cat output.txt 
+wc -b file.txt 
+wc -b file.txt 2> err.txt
+ls
+cat err.txt 
+sort numbers.txt 
+sort numbers.txt > sorted.txt
+cat sorted.txt 
+uniq sorted.txt 
+man uniq
+cat > in.txt
+cat in.txt 
+bc < in.txt 
+bc < in.txt > out.txt
+cat out
+cat out.txt 
+bc < in.txt > out.txt 2> err.txt
+cat err.txt 
+sort numbers.txt 
+sort numbers.txt | uniq
+cat lines.txt 
+head -12 lines.txt 
+head -12 lines.txt | tail -7
+head -12 lines.txt | tail -n +7
+sort -n numbers.txt 
+sort -n numbers.txt | rev
+sort -n numbers.txt | tac
+history
+clear
+echo "Hello    DITISS"
+echo "Hello    DITISS" | tr -s " "
+echo "Hello    DITISS" | tr -s "l"
+echo "Hello    DITISS" | tr -s "S"
+echo "Hello DITISS" | tr " " "@"
+echo "Hello    DITISS" | tr -s "lS"
+echo "Hello    DITISS" | tr -s "lS "
+echo "Hello Hello" | tr -s "l"
+echo "mississuaga" | tr -s "iss"
+echo "Hello DITISS" | tr " " "@"
+echo "Hello DITISS"
+echo "Hello DITISS" | tr "a-z" "A-Z"
+echo "Hello DITISS" | tr "A-Z" "a-z"
+echo "Hello DITISS" | tr "a-z|A-Z" "A-Z|a-z"
+cat > modules.txt
+cat modules.txt 
+cut -d " " modules.txt 
+cut -d " " -f1 modules.txt 
+cut -d " " -f1,2 modules.txt 
+cut -d " " -f1,2,3 modules.txt 
+cut -d " " -f1,3 modules.txt 
+cut -d " " -f3,1 modules.txt 
+cut -d " " -f2-4 modules.txt 
+ls -l
+ls -l | cut -d " " -f1,9
+ls -l | tr -s " " | cut -d " " -f1,9
+ls -l | tr -s " " | cut -d " " -f1,9 | tail -n +2
+ls
+ls *.txt
+ls f?.txt
+ls ??.txt
+touch f.txt
+ls f?.txt
+mkdir test
+ls
+mkdir -v test1
+man mkdir
+ls -l f1.txt 
+chmod 0 f1.txt
+ls -l f1.txt 
+chmod 
+chmod +x f1.txt 
+ls -l f1.txt 
+chmod -x f1.txt 
+ls -l f1.txt 
+chmod +w f1.txt 
+ls -l f1.txt 
+chmod -w f1.txt 
+ls -l f1.txt 
+chmod +r f1.txt 
+ls -l f1.txt 
+chmod -r f1.txt 
+ls -l f1.txt 
+chmod u+r f1.txt 
+ls -l f1.txt 
+chmod u-r f1.txt 
+ls -l f1.txt 
+chmod u+rw f1.txt 
+ls -l f1.txt 
+chmod u-rw g+r f1.txt 
+chmod u-rw f1.txt 
+ls -l f1.txt 
+chmod g+r f1.txt 
+ls -l f1.txt 
+chmod 664 f1.txt 
+ls -l f1.txt 
+chmod 744 f1.txt 
+ls -l f1.txt 
+ls
+ls -l dir2
+ls -l
+ls dir2
+chmod -r dir2
+ls dir2
+chmod +r dir2
+ls dir2
+chmod -w dir2
+ls dir2
+touch dir2/test.txt
+rm dir2/file1.txt 
+chmod +w dir2
+cd dir2/
+pwd
+cd ..
+chmod -x dir2
+cd dir2/
+chmod +x dir2
+cd dir2/
+chmod -x ../dir2
+cd ..
+cd dir2/
+ls
+alias list="ls -l | tr -s \" \" | cut -d \" \" -f1,9"
+list
+unalias list
+list
+man bash
+man cd
+which ls
+which cd
+whereis ls
+whereis cd
+ls /boot/
+ls /lib/modules/5.4.73-ldd/
+ls -R /lib/modules/5.4.73-ldd/
+uname
+uname -r
+uname -a

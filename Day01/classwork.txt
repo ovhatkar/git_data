@@ -1,0 +1,65 @@
+date
+cal
+cal -y
+cal -y 2021
+man date
+man cal
+man man
+man 3 printf
+man 1 date
+pwd
+ls
+cd march23
+pwd
+ls
+mkdir ditiss
+ls
+cd ditiss
+pwd
+mkdir dir1 dir2 dir3
+ls
+mkdir -p one/two/three/four
+ls
+ls one
+ls one/two
+ls one/two/three
+ls one/two/three/four
+touch file1.txt
+ls
+touch f1.txt f2.txt f3.txt
+ls
+rm file1.txt 
+ls
+rmdir dir3
+ls
+cat > file1.txt
+ls
+cat file1.txt 
+cat > file1.txt
+cat file1.txt 
+cat >> file1.txt
+cat file1.txt 
+ls
+cp file1.txt copy.txt
+ls
+cat file1.txt 
+cat copy.txt 
+cp file1.txt dir2
+ls
+ls dir2
+cat dir2/file1.txt 
+cp dir2 copy
+cp -r dir2 copy
+ls
+ls dir2
+ls copy
+ls
+mv file1.txt file2.txt 
+ls
+mv file2.txt dir2
+ls
+ls dir2/
+ls
+rmdir copy/
+rm -r copy
+ls
