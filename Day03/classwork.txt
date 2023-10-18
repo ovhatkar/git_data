@@ -1,0 +1,65 @@
+tty
+whoami
+who
+w
+who am i
+who -w
+ps
+ps -e
+ps -e -o cmd,pid,ppid
+ls
+find . -name "out.txt"
+find ~ -name "out.txt"
+find . -type f
+find dir2 -type f
+find . -tyde d
+find . -type d
+find /boot -type l
+find . -size 4k
+ls -l
+ls -lh
+history
+cat > taste.txt
+cat taste.txt 
+grep "good" taste.txt 
+grep "is" taste.txt 
+grep -w "is" taste.txt 
+grep -n "is" taste.txt 
+grep -c "is" taste.txt 
+grep -v "is" taste.txt 
+grep -i "Is" taste.txt 
+grep "is" taste.txt 
+grep "^is" taste.txt 
+grep "is$" taste.txt 
+grep "^is$" taste.txt 
+cat > select.txt
+grep "bg" select.txt 
+grep "bag" select.txt 
+grep "b[aou]g" select.txt 
+grep "b[a-z]g" select.txt 
+grep "b[^aou]g" select.txt 
+grep "b[^a-z]g" select.txt 
+grep "b.g" select.txt 
+grep "b*g" select.txt 
+grep "b\*g" select.txt 
+grep "b[*]g" select.txt 
+grep -F "b*g" select.txt 
+fgrep "b*g" select.txt 
+cat > repeat.txt
+grep -E "wo?w" repeat.txt 
+egrep "wo?w" repeat.txt 
+egrep "wo+w" repeat.txt 
+egrep "wo{2}w" repeat.txt 
+egrep "wo{4}w" repeat.txt 
+egrep "wo{2,4}w" repeat.txt 
+egrep "wo{,4}w" repeat.txt 
+egrep "wo{2,}w" repeat.txt 
+egrep "woow" repeat.txt 
+egrep "w[oo]w" repeat.txt 
+egrep "w(oo)w" repeat.txt 
+egrep "w[oo]{3}w" repeat.txt 
+egrep "w(oo){3}w" repeat.txt 
+egrep "good" taste.txt 
+egrep "(good)" taste.txt 
+egrep "(good|is)" taste.txt 
+egrep "good|is" taste.txt 
