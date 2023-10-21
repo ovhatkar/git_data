@@ -1,0 +1,24 @@
+ls -l test.txt 
+chown osboxes test.txt 
+sudo chown osboxes test.txt 
+ls -l test.txt 
+sudo chown :osboxes test.txt 
+ls -l test.txt 
+sudo chown sunbeam:sunbeam test.txt 
+ls -l test.txt 
+echo $?
+ls -W
+echo $?
+kill -l
+top
+ls -l
+ls
+ls | tee lsout.txt
+cat lsout.txt 
+mv demo.sh install.sh
+vim install.sh 
+man test
+test 1 -lt 10
+echo $?
+test 1 -gt 10
+echo $?
