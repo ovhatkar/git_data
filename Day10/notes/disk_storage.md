@@ -33,4 +33,13 @@
 # unmount the partition
 > sudo umount /mnt/mydrive
 
+# to auto mount the disks
+> sudo vim /etc/fstab
+
+# add following entries
+# partition     mount point     fs      defaults        defaults
+/dev/nvme0n2p1  /mnt/disk1      ext4    defaults        0 0
+/dev/nvme0n2p2  /mnt/disk2      ext4    defaults        0 0
+
+
 ```
